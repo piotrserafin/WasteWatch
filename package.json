@@ -1,0 +1,52 @@
+{
+  "name": "WasteWatch",
+  "author": "Piotr Serafin",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.0.10"
+  },
+  "pebble": {
+    "displayName": "WasteWatch",
+    "uuid": "595b9657-ee03-4dd6-9b7d-5236ca394fa2",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "capabilities": ["configurable"],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "Token",
+      "ProxyUrl",
+      "StreetName",
+      "NumberName",
+      "RequestType",
+      "ScheduleCount",
+      "ScheduleIndex",
+      "ScheduleType",
+      "ScheduleDate",
+      "ScheduleDay",
+      "ErrorMessage"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "png",
+          "name": "IMAGE_MENU_ICON",
+          "file": "images/icon_menu.png",
+          "menuIcon": true
+        }
+      ]
+    }
+  }
+}
